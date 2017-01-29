@@ -1,8 +1,8 @@
 ﻿using System.Web.Http;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
-using WebAPILoginWithAspNetIdentity.Model;
-using static WebAPILoginWithAspNetIdentity.Model.IdentityContext;
+using WebAPILoginWithAspNetIdentity.Models;
+using static WebAPILoginWithAspNetIdentity.Models.IdentityContext;
 using System.Net.Http;
 using System.Web;
 using System.Linq;
@@ -68,6 +68,12 @@ namespace WebAPILoginWithAspNetIdentity.Controllers
         {
             HttpContext.Current.GetOwinContext().Authentication.SignOut();
             return "Você saiu do sistema!";
+        }
+
+        [Authorize(Roles = "User")]
+        public string Get()
+        {
+            return User.Identity.Name;
         }
     }
 }

@@ -9,9 +9,9 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web;
-using static WebAPILoginWithAspNetIdentity.Model.IdentityContext;
+using static WebAPILoginWithAspNetIdentity.Models.IdentityContext;
 
-namespace WebAPILoginWithAspNetIdentity.Model
+namespace WebAPILoginWithAspNetIdentity.Models
 {
     public class IdentityConfig
     {

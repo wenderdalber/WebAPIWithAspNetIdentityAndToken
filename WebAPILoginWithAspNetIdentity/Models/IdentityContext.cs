@@ -4,7 +4,7 @@ using System.Data.Entity;
 using System.Security.Claims;
 using System.Threading.Tasks;
 
-namespace WebAPILoginWithAspNetIdentity.Model
+namespace WebAPILoginWithAspNetIdentity.Models
 {
     public class IdentityContext : DbContext
     {
