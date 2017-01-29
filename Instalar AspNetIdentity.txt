@@ -1,0 +1,10 @@
+//Instalar AspNet Identity
+
+Install-Package Microsoft.AspNet.Identity.Core
+Install-Package EntityFramework
+Install-Package Owin
+Install-Package Microsoft.AspNet.Identity.Owin
+Install-package Microsoft.AspNet.Identity.EntityFramework
+Install-Package Microsoft.AspNet.WebApi.Owin
+Install-Package Microsoft.Owin.Host.SystemWeb
+
